@@ -100,7 +100,7 @@ Post.findById("5eecc3334db32752fb445d63")
     // res[0] => post
     // res[1] => danh sach comment
     const _post = {
-      ...res[0]._doc,
+      ...res[0]._doc, // loopback .__data
       comments: res[1]
     }
     console.log(_post)
